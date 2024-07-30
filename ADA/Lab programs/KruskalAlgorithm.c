@@ -1,18 +1,20 @@
 #include<stdio.h>
 int cost[10][10],n;
+int i,j;
+
 void kruskal()
 {
 int par[n];
 int a=0,b=0,u=0,v=0,min, mincost = 0, ne = 0;
-for(int i=0;i<n;i++)
+for(i=0;i<n;i++)
 par[i]=-1;
 printf("the minimum spanning tree edges are...");
 while(ne < n-1)
 {
 //Find the least cost edge
 min = 999;
-for(int i=0;i<n;i++)
-for(int j=0;j<n;j++)
+for(i=0;i<n;i++)
+for(j=0;j<n;j++)
 if(cost[i][j] < min)
 {
 min=cost[i][j];
@@ -40,8 +42,8 @@ void main()
 printf("Enter the no. of vertices:");
 scanf("%d",&n);
 printf("Enter the cost matrix\n");
-for(int i=0;i<n;i++)
-for(int j=0;j<n;j++)
+for(i=0;i<n;i++)
+for(j=0;j<n;j++)
 scanf("%d",&cost[i][j]);
 kruskal();
 }
