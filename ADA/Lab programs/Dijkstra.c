@@ -44,13 +44,13 @@ int source;
 printf("Enter the no.of vertices:");
 scanf("%d",&n);
 printf("Enter the cost matrix\n");
-for(i=0;i<n;i++)
-for(j=0;j<n;j++)
-scanf("%d",&cost[i][j]);
+  for(i=0;i<n;i++)
+    for(j=0;j<n;j++)
+      scanf("%d",&cost[i][j]);
 printf("Enter the source vertex:");
-scanf("%d",&source);
+  scanf("%d",&source);
 dijkstra(source);
 printf("the shortest distance is...");
 for(i=0; i<n; i++)
-printf("Cost from %d to %d is %d\n",source,i,dist[i]);
+  printf("Cost from %d to %d is %d\n",source,i,dist[i]);
 }
