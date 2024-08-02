@@ -3,7 +3,7 @@ int cost[10][10],n,dist[10];
 int i,v,j;
 int minm(int m, int n)
 {
-return(( m < n) ? m: n);
+  return(( m < n) ? m: n);
 }
 void dijkstra(int source)
 {
