@@ -8,12 +8,12 @@ int i,j,k,c[10000];
 i=low, j=mid+1, k=0;
 while((i<=mid) && (j<=high))
 {
-count++;
-//choose the least element and store in Temporary array 'C'
-if(a[i]<a[j])
-c[k++]=a[i++];
-else
-c[k++]=a[j++];
+  count++;
+  //choose the least element and store in Temporary array 'C'
+  if(a[i]<a[j])
+    c[k++]=a[i++];
+  else
+    c[k++]=a[j++];
 }
 //Copy the remaining array elements from any one of sub-array
 while(i<=mid)
