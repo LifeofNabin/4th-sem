@@ -11,7 +11,7 @@ void dijkstra(int source)
 int s[10]={0};
 int min, w=0;
 for(i=0;i<n;i++)
-dist[i]=cost[source][i];
+  dist[i]=cost[source][i];
 //Initialize dist from source to source as 0
 dist[source] = 0;
 //mark source vertex - estimated for its shortest path
