@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<math.h>
 int cost[10][10],n,dist[10];
 int i,v,j;
 int minm(int m, int n)
